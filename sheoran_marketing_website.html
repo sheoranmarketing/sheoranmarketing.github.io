@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sheoran Marketing — shop across fashion, electronics, home, beauty and more.">
+<title>Sheoran Marketing | Everything in One Place</title>
+<style>
+:root{--bg:#090909;--panel:#141414;--panel2:#1b1b1b;--gold:#d8b46a;--muted:#a6a6a6;--white:#f7f5f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#090909ed;backdrop-filter:blur(14px);border-bottom:1px solid #282828}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:19px;font-weight:800;letter-spacing:2px}.brand span{color:var(--gold)}
+nav{display:flex;gap:25px;color:#ddd;font-size:13px}nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;color:white;border:1px solid #444;border-radius:8px;padding:8px}
+.hero{padding:82px 0 74px;background:radial-gradient(ellipse at 78% 30%,#5c45221c,transparent 42%),linear-gradient(120deg,#101010,#090909)}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;max-width:760px;margin:18px 0}
+h1 em{font-style:normal;color:var(--gold)}.hero p{max-width:570px;color:#b9b9b9;line-height:1.8;font-size:16px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:6px;font-weight:700;font-size:13px;border:1px solid var(--gold);cursor:pointer}
+.primary{background:var(--gold);color:#111}.secondary{color:var(--white);background:transparent}.btn:hover{filter:brightness(1.12)}
+.trust{display:flex;gap:30px;flex-wrap:wrap;margin-top:48px;color:#aaa;font-size:12px}.trust b{color:#eee}
+section{padding:68px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}
+h2{font-size:30px;margin:8px 0}.sub{color:var(--muted);font-size:14px;line-height:1.7}
+.categories{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.cat{background:linear-gradient(145deg,#1b1b1b,#101010);border:1px solid #292929;border-radius:10px;padding:22px 16px;min-height:125px}
+.cat .symbol{font-size:25px}.cat h3{font-size:14px;margin:14px 0 5px}.cat p{font-size:11px;color:var(--muted);margin:0}
+.products{background:#0e0e0e}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+input,select{background:#171717;border:1px solid #333;color:white;border-radius:6px;padding:12px 14px;min-width:180px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.product{border:1px solid #292929;background:var(--panel);border-radius:10px;overflow:hidden}
+.product-art{height:170px;display:grid;place-items:center;background:linear-gradient(135deg,#25211a,#111);font-size:48px}
+.product-info{padding:17px}.tag{font-size:10px;color:var(--gold);letter-spacing:1px;text-transform:uppercase}
+.product h3{font-size:16px;margin:8px 0}.product p{font-size:12px;color:var(--muted);line-height:1.6;min-height:38px}
+.product-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:15px}
+.price{font-weight:800;color:var(--gold)}.small-btn{border:1px solid #8d713d;color:var(--gold);background:transparent;border-radius:5px;padding:9px 12px;font-size:11px;font-weight:700;cursor:pointer}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-card{border:1px solid #30291d;background:linear-gradient(145deg,#1c1913,#101010);border-radius:12px;padding:30px}
+.about-card strong{display:block;color:var(--gold);font-size:38px;margin-bottom:8px}
+.contact{background:linear-gradient(120deg,#1c1810,#101010);border-top:1px solid #352b1a;border-bottom:1px solid #352b1a}
+.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}
+footer{padding:26px 0;color:#888;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.note{color:#777;font-size:11px;margin-top:14px}
+@media(max-width:800px){nav{display:none}.menu{display:block}.categories{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.contact-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.hero{padding:62px 0}.grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.trust{gap:14px}.brand{font-size:16px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span>SHEORAN</span> MARKETING</a>
+  <nav><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <button class="menu" onclick="document.querySelector('nav').style.display=document.querySelector('nav').style.display==='flex'?'none':'flex'">Menu</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div class="eyebrow">Welcome to Sheoran Marketing</div>
+  <h1>Everything you need.<br><em>One trusted place.</em></h1>
+  <p>Discover products across fashion, electronics, home, beauty and everyday essentials. Browse our collection and place your order directly through WhatsApp.</p>
+  <div class="actions"><a class="btn primary" href="#products">Explore Products</a><a class="btn secondary" href="#contact">Contact Us</a></div>
+  <div class="trust"><span>✦ <b>Multiple categories</b></span><span>✦ <b>Easy WhatsApp ordering</b></span><span>✦ <b>Personal assistance</b></span></div>
+</div></section>
+<section id="categories"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Browse collections</div><h2>Shop by category</h2><div class="sub">Explore a wide range of products in one place.</div></div></div>
+  <div class="categories">
+    <div class="cat"><div class="symbol">✦</div><h3>Fashion</h3><p>Clothing & style</p></div>
+    <div class="cat"><div class="symbol">⌁</div><h3>Electronics</h3><p>Gadgets & accessories</p></div>
+    <div class="cat"><div class="symbol">◇</div><h3>Home & Living</h3><p>Everyday essentials</p></div>
+    <div class="cat"><div class="symbol">✧</div><h3>Beauty</h3><p>Personal care</p></div>
+    <div class="cat"><div class="symbol">＋</div><h3>More</h3><p>Explore other products</p></div>
+  </div>
+</div></section>
+<section class="products" id="products"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Our collection</div><h2>Featured products</h2><div class="sub">These are demo listings. Replace them with your real products and prices.</div></div></div>
+  <div class="tools"><input id="search" type="search" placeholder="Search products..." oninput="filterProducts()"><select id="category" onchange="filterProducts()"><option value="all">All categories</option><option>Fashion</option><option>Electronics</option><option>Home</option><option>Beauty</option></select></div>
+  <div class="grid" id="productGrid">
+    <article class="product" data-category="Fashion" data-name="Everyday style collection"><div class="product-art">✦</div><div class="product-info"><div class="tag">Fashion</div><h3>Everyday Style Collection</h3><p>Add your product description, available sizes and colours here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Everyday Style Collection')">ORDER ON WHATSAPP</button></div></div></article>
+    <article class="product" data-category="Electronics" data-name="Smart gadgets"><div class="product-art">⌁</div><div class="product-info"><div class="tag">Electronics</div><h3>Smart Gadgets</h3><p>Add model details, key features and warranty information here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Smart Gadgets')">ORDER ON WHATSAPP</button></div></div></article>
+    <article class="product" data-category="Home" data-name="Home essentials"><div class="product-art">◇</div><div class="product-info"><div class="tag">Home & Living</div><h3>Home Essentials</h3><p>Add dimensions, material and other useful product details here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Home Essentials')">ORDER ON WHATSAPP</button></div></div></article>
+    <article class="product" data-category="Beauty" data-name="Personal care picks"><div class="product-art">✧</div><div class="product-info"><div class="tag">Beauty</div><h3>Personal Care Picks</h3><p>Add product details, quantity and other relevant information here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Personal Care Picks')">ORDER ON WHATSAPP</button></div></div></article>
+    <article class="product" data-category="Fashion" data-name="Shoes and accessories"><div class="product-art">＋</div><div class="product-info"><div class="tag">Fashion</div><h3>Shoes & Accessories</h3><p>Add available styles, sizes and colours here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Shoes & Accessories')">ORDER ON WHATSAPP</button></div></div></article>
+    <article class="product" data-category="Home" data-name="Daily use products"><div class="product-art">◈</div><div class="product-info"><div class="tag">More</div><h3>Daily Use Products</h3><p>Showcase any other products your store offers.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Daily Use Products')">ORDER ON WHATSAPP</button></div></div></article>
+  </div>
+  <p class="note">Demo products are placeholders, not real offers. Update product details, prices and images before publishing.</p>
+</div></section>
+<section id="about"><div class="wrap about">
+  <div><div class="eyebrow">Who we are</div><h2>Welcome to Sheoran Marketing</h2><p class="sub">We’re building a convenient place to discover products across multiple categories. Our goal is to make browsing simple and ordering easy, with direct assistance through WhatsApp.</p><p class="sub">Add your business story, location, delivery information and customer support hours here.</p></div>
+  <div class="about-card"><strong>SM.</strong><h3>Simple shopping. Direct support.</h3><p class="sub">A growing multi-category store designed around convenience and customer service.</p></div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap contact-inner">
+  <div><div class="eyebrow">Get in touch</div><h2>Ready to place an order?</h2><p class="sub">Message Sheoran Marketing on WhatsApp for product availability, pricing and orders.</p></div>
+  <a class="btn primary" href="#" onclick="order('Hello, I would like to know more about your products.');return false;">Chat on WhatsApp</a>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Sheoran Marketing. All rights reserved.</span><span>Premium shopping experience</span></div></footer>
+<script>
+const WHATSAPP_NUMBER = "91XXXXXXXXXX"; // Replace with your WhatsApp number, including country code. Do not include + or spaces.
+function order(product){if(WHATSAPP_NUMBER.includes("X")){alert("Please add your WhatsApp number in the website file first.");return;}const msg=encodeURIComponent("Hello Sheoran Marketing! I am interested in: "+product+". Please share details and price.");window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+msg,"_blank");}
+function filterProducts(){const q=document.getElementById("search").value.toLowerCase();const c=document.getElementById("category").value;document.querySelectorAll(".product").forEach(p=>{const match=p.dataset.name.toLowerCase().includes(q)||p.innerText.toLowerCase().includes(q);p.style.display=(match&&(c==="all"||p.dataset.category===c))?"":"none";});}
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
