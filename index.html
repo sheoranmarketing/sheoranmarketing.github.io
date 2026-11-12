@@ -76,12 +76,137 @@ footer{padding:26px 0;color:#888;font-size:12px}.foot{display:flex;justify-conte
   <div class="section-head"><div><div class="eyebrow">Our collection</div><h2>Featured products</h2><div class="sub">These are demo listings. Replace them with your real products and prices.</div></div></div>
   <div class="tools"><input id="search" type="search" placeholder="Search products..." oninput="filterProducts()"><select id="category" onchange="filterProducts()"><option value="all">All categories</option><option>Fashion</option><option>Electronics</option><option>Home</option><option>Beauty</option></select></div>
   <div class="grid" id="productGrid">
-    <article class="product" data-category="Fashion" data-name="Everyday style collection"><div class="product-art">✦</div><div class="product-info"><div class="tag">Fashion</div><h3>Everyday Style Collection</h3><p>Add your product description, available sizes and colours here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Everyday Style Collection')">ORDER ON WHATSAPP</button></div></div></article>
-    <article class="product" data-category="Electronics" data-name="Smart gadgets"><div class="product-art">⌁</div><div class="product-info"><div class="tag">Electronics</div><h3>Smart Gadgets</h3><p>Add model details, key features and warranty information here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Smart Gadgets')">ORDER ON WHATSAPP</button></div></div></article>
-    <article class="product" data-category="Home" data-name="Home essentials"><div class="product-art">◇</div><div class="product-info"><div class="tag">Home & Living</div><h3>Home Essentials</h3><p>Add dimensions, material and other useful product details here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Home Essentials')">ORDER ON WHATSAPP</button></div></div></article>
-    <article class="product" data-category="Beauty" data-name="Personal care picks"><div class="product-art">✧</div><div class="product-info"><div class="tag">Beauty</div><h3>Personal Care Picks</h3><p>Add product details, quantity and other relevant information here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Personal Care Picks')">ORDER ON WHATSAPP</button></div></div></article>
-    <article class="product" data-category="Fashion" data-name="Shoes and accessories"><div class="product-art">＋</div><div class="product-info"><div class="tag">Fashion</div><h3>Shoes & Accessories</h3><p>Add available styles, sizes and colours here.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Shoes & Accessories')">ORDER ON WHATSAPP</button></div></div></article>
-    <article class="product" data-category="Home" data-name="Daily use products"><div class="product-art">◈</div><div class="product-info"><div class="tag">More</div><h3>Daily Use Products</h3><p>Showcase any other products your store offers.</p><div class="product-bottom"><span class="price">Price on request</span><button class="small-btn" onclick="order('Daily Use Products')">ORDER ON WHATSAPP</button></div></div></article>
+    
+<article class="product" data-category="Fashion" data-name="Everyday style collection">
+  <div class="product-art">✦</div>
+  <div class="product-info">
+    <div class="tag">Fashion</div>
+    <h3>Everyday Style Collection</h3>
+    <p>Explore stylish everyday fashion collections.</p>
+    <div class="product-bottom">
+      <span class="price">Price on request</span>
+      <button class="small-btn" onclick="order('Everyday Style Collection')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Electronics" data-name="Smart gadgets">
+  <div class="product-art">⌁</div>
+  <div class="product-info">
+    <div class="tag">Electronics</div>
+    <h3>Smart Gadgets</h3>
+    <p>Explore useful smart electronic gadgets.</p>
+    <div class="product-bottom">
+      <span class="price">Price on request</span>
+      <button class="small-btn" onclick="order('Smart Gadgets')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Home" data-name="Home essentials">
+  <div class="product-art">◇</div>
+  <div class="product-info">
+    <div class="tag">Home & Living</div>
+    <h3>Home Essentials</h3>
+    <p>Useful products for your home.</p>
+    <div class="product-bottom">
+      <span class="price">Price on request</span>
+      <button class="small-btn" onclick="order('Home Essentials')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Beauty" data-name="Personal care picks">
+  <div class="product-art">✧</div>
+  <div class="product-info">
+    <div class="tag">Beauty</div>
+    <h3>Personal Care Picks</h3>
+    <p>Discover personal care products.</p>
+    <div class="product-bottom">
+      <span class="price">Price on request</span>
+      <button class="small-btn" onclick="order('Personal Care Picks')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Fashion" data-name="Shoes and accessories">
+  <div class="product-art">＋</div>
+  <div class="product-info">
+    <div class="tag">Fashion</div>
+    <h3>Shoes & Accessories</h3>
+    <p>Explore different styles and accessories.</p>
+    <div class="product-bottom">
+      <span class="price">Price on request</span>
+      <button class="small-btn" onclick="order('Shoes & Accessories')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Home" data-name="Daily use products">
+  <div class="product-art">◈</div>
+  <div class="product-info">
+    <div class="tag">More</div>
+    <h3>Daily Use Products</h3>
+    <p>Discover useful everyday products.</p>
+    <div class="product-bottom">
+      <span class="price">Price on request</span>
+      <button class="small-btn" onclick="order('Daily Use Products')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Fashion" data-name="Classic Men's Watch">
+  <div class="product-art">⌚</div>
+  <div class="product-info">
+    <div class="tag">Men's Watches</div>
+    <h3>Classic Men's Watch</h3>
+    <p>Stylish classic analog watch for everyday use.</p>
+    <div class="product-bottom">
+      <span class="price">₹999</span>
+      <button class="small-btn" onclick="order('Classic Men's Watch')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Fashion" data-name="Elegant Women's Watch">
+  <div class="product-art">⌚</div>
+  <div class="product-info">
+    <div class="tag">Women's Watches</div>
+    <h3>Elegant Women's Watch</h3>
+    <p>Elegant design for daily and special occasions.</p>
+    <div class="product-bottom">
+      <span class="price">₹1,299</span>
+      <button class="small-btn" onclick="order('Elegant Women's Watch')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Electronics" data-name="Smart Watch">
+  <div class="product-art">⌚</div>
+  <div class="product-info">
+    <div class="tag">Smart Watches</div>
+    <h3>Smart Watch</h3>
+    <p>Modern smartwatch with a stylish design.</p>
+    <div class="product-bottom">
+      <span class="price">₹1,799</span>
+      <button class="small-btn" onclick="order('Smart Watch')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="Electronics" data-name="Sports Digital Watch">
+  <div class="product-art">⌚</div>
+  <div class="product-info">
+    <div class="tag">Sports Watches</div>
+    <h3>Sports Digital Watch</h3>
+    <p>Sporty digital design for everyday activities.</p>
+    <div class="product-bottom">
+      <span class="price">₹799</span>
+      <button class="small-btn" onclick="order('Sports Digital Watch')">ORDER ON WHATSAPP</button>
+    </div>
+  </div>
+</article>
+
   </div>
   <p class="note">Demo products are placeholders, not real offers. Update product details, prices and images before publishing.</p>
 </div></section>
