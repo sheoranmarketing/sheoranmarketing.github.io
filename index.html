@@ -97,8 +97,7 @@ footer{padding:26px 0;color:#888;font-size:12px}.foot{display:flex;justify-conte
 <footer><div class="wrap foot"><span>© <span id="year"></span> Sheoran Marketing. All rights reserved.</span><span>Premium shopping experience</span></div></footer>
 <script>
 const WHATSAPP_NUMBER = "919116080698"; // Replace with your WhatsApp number, including country code. Do not include + or spaces.
-function order(product){if(WHATSAPP_NUMBER.includes("X")){alert("Please add your WhatsApp number in the website file first.");return;}const msg=encodeURIComponent("Hello Sheoran Marketing! I am interested in: "+product+". Please share details and price.");window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+msg,"_blank");}
+function order(product){if(WHATSAPP_NUMBER.includes("X")){alert("Please add your WhatsApp number in the website file first.");return;}const msg=encodeURIComponent("Hello Sheoran Marketing! I am interested in: "+product+". Please share details and price.");window.location.href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+msg;}
 function filterProducts(){const q=document.getElementById("search").value.toLowerCase();const c=document.getElementById("category").value;document.querySelectorAll(".product").forEach(p=>{const match=p.dataset.name.toLowerCase().includes(q)||p.innerText.toLowerCase().includes(q);p.style.display=(match&&(c==="all"||p.dataset.category===c))?"":"none";});}
 document.getElementById("year").textContent=new Date().getFullYear();
-</script>
 </body></html>
